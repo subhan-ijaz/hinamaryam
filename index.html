@@ -343,7 +343,7 @@
         <article class="group rounded-3xl bg-white p-5 pb-7 border border-black/10 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300">
           <div class="rounded-2xl bg-offwhite border border-black/5 h-56 mb-6 overflow-hidden flex items-center justify-center p-6 relative">
             <span class="absolute z-10 top-3 left-3 text-[10px] font-condensed font-bold tracking-widest uppercase px-2.5 py-1 rounded-full bg-white text-neutral-600">01 / Wireframing</span>
-            <img src="assets/images/cloudfs.net_.png" alt="Cloud Future System interface design" class="absolute inset-0 w-full h-full object-cover" loading="lazy"><span aria-hidden="true" class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/10"></span>
+            <img src="assets/images/cloudfs.net_.png" alt="Cloud FS interface design" class="absolute inset-0 w-full h-full object-cover" loading="lazy"><span aria-hidden="true" class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/10"></span>
           </div>
           <h3 class="font-condensed font-bold text-2xl tracking-wide text-obsidian uppercase mb-2">
             BACK TO PAPER
@@ -445,7 +445,7 @@
       <div class="max-w-3xl reveal">
         <div class="flex items-center gap-3 mb-4">
           <span class="px-3 py-1 rounded-full bg-crimson text-white font-condensed font-bold text-xs tracking-widest">06</span>
-          <span class="font-condensed font-bold text-sm tracking-[0.2em] uppercase text-crimson">Salaar Technologies • Figma Portfolio</span>
+          <span class="font-condensed font-bold text-sm tracking-[0.2em] uppercase text-crimson">Salar Technology • Figma Portfolio</span>
         </div>
         <h2 class="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-white uppercase mb-4">
           EXPERIENCE DESIGN
@@ -463,7 +463,7 @@
           <div>
             <span class="text-[11px] font-condensed font-bold tracking-[0.2em] uppercase text-crimson">Featured Case Study Spotlight</span>
             <h3 class="font-display font-bold text-2xl sm:text-3xl text-white mt-1">
-              Flagship Figma Builds at Salaar Technologies
+              Flagship Figma Builds at Salar Technology
             </h3>
           </div>
 
@@ -471,19 +471,19 @@
           <div class="flex flex-wrap gap-2" role="tablist" aria-label="Featured Case Study Switcher">
             <button
               type="button"
-              id="spotlight-tab-horizon"
-              onclick="selectSpotlight('horizon')"
+              id="spotlight-tab-cloudfs"
+              onclick="selectSpotlight('cloudfs')"
               class="spotlight-tab px-4 py-2 rounded-xl bg-crimson text-white text-xs font-bold tracking-wide transition-all cursor-pointer"
             >
-              Horizon PK (Full Redesign)
+              Cloud FS
             </button>
             <button
               type="button"
-              id="spotlight-tab-cloudfs"
-              onclick="selectSpotlight('cloudfs')"
+              id="spotlight-tab-electomix"
+              onclick="selectSpotlight('electomix')"
               class="spotlight-tab px-4 py-2 rounded-xl bg-obsidian text-neutral-300 hover:text-white border border-white/10 text-xs font-bold tracking-wide transition-all cursor-pointer"
             >
-              Cloud Future System
+              Electro Mix
             </button>
             <button
               type="button"
@@ -506,12 +506,12 @@
                 <span class="w-2.5 h-2.5 rounded-full bg-crimson"></span>
                 <a
                   id="spotlight-domain-link"
-                  href="https://horizonpk.com"
+                  href="https://cloudfs.net"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-xs font-mono text-neutral-300 hover:text-white underline decoration-crimson underline-offset-4"
                 >
-                  horizonpk.com ↗
+                  cloudfs.net ↗
                 </a>
               </div>
 
@@ -548,7 +548,7 @@
           <div class="lg:col-span-5 space-y-5">
             <div class="flex flex-wrap items-center gap-2">
               <span id="spotlight-badge" class="px-3 py-1 rounded-full bg-crimson/20 border border-crimson/40 text-crimson font-condensed font-bold text-xs uppercase tracking-wider">
-                Full Redesign
+                New Project
               </span>
               <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-neutral-300 text-xs font-semibold">
                 Tool Used: Figma
@@ -556,7 +556,7 @@
             </div>
 
             <h4 id="spotlight-title" class="font-display font-extrabold text-2xl sm:text-3xl text-white">
-              Horizon PK Website
+              Cloud FS
             </h4>
 
             <div class="space-y-1.5">
@@ -564,7 +564,7 @@
                 THE CHALLENGE
               </span>
               <p id="spotlight-challenge" class="text-sm sm:text-base text-neutral-300 leading-relaxed">
-                The legacy corporate website suffered from fragmented visual hierarchy and dense text blocks that reduced readability and user engagement.
+                Cloud infrastructure and service workflows required an intuitive interface capable of presenting complex technical capabilities in a clean, scalable structure.
               </p>
             </div>
 
@@ -573,7 +573,7 @@
                 UX/UI Solution
               </span>
               <p id="spotlight-solution" class="text-sm sm:text-base text-neutral-100 leading-relaxed">
-                Designed an intuitive UI aligned with brand identity and structured a clean modular layout to improve readability and user interaction.
+                Designed a service-oriented web application prototype focusing on modern UI/UX principles, scalable architecture, and responsive cloud service workflows.
               </p>
             </div>
 
@@ -635,140 +635,7 @@
         </div>
 
         <!-- Projects Grid -->
-        <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
-          
-          <!-- PROJECT 1: Horizon PK Website -->
-          <article
-            data-category="websites"
-            onclick="openProjectModal('horizon')"
-            class="project-card group rounded-3xl bg-charcoal border border-white/10 hover:border-crimson overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between cursor-pointer"
-          >
-            <div>
-              <!-- Bespoke UI Preview Header -->
-              <div class="h-52 bg-gradient-to-br from-[#1C1917] via-[#292524] to-[#0D0D0D] p-5 relative overflow-hidden flex flex-col justify-between border-b border-white/10">
-                <div class="flex items-center justify-between text-[10px]">
-                  <span class="px-2.5 py-0.5 rounded-full bg-crimson text-white font-bold uppercase tracking-wider">Full Redesign</span>
-                  <span class="px-2.5 py-0.5 rounded-full bg-white/10 text-neutral-200 font-semibold">Tool: Figma</span>
-                </div>
-                <!-- Mini Browser Frame -->
-                <div class="mx-auto w-full rounded-t-xl bg-[#121214] border-t border-x border-white/20 p-3 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                  <div class="flex items-center justify-between border-b border-white/10 pb-2 mb-2">
-                    <span class="font-display font-bold text-xs text-white tracking-wide">HORIZON PK</span>
-                    <span class="text-[9px] font-mono text-crimson">horizonpk.com</span>
-                  </div>
-                  <div class="grid grid-cols-12 gap-2 items-center">
-                    <div class="col-span-7 space-y-1.5">
-                      <div class="h-2 w-4/5 rounded bg-white/80"></div>
-                      <div class="h-1.5 w-full rounded bg-white/25"></div>
-                      <div class="inline-block px-2 py-0.5 rounded bg-crimson text-[8px] font-bold text-white">Explore Brand</div>
-                    </div>
-                    <div class="col-span-5 h-12 rounded-lg bg-gradient-to-tr from-crimson/30 to-white/10 border border-white/10"></div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card Details -->
-              <div class="p-6 pb-4 space-y-3">
-                <div class="flex items-center justify-between gap-2">
-                  <a
-                    href="https://horizonpk.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onclick="event.stopPropagation()"
-                    class="text-xs font-mono text-crimson hover:underline"
-                  >
-                    horizonpk.com ↗
-                  </a>
-                  <span class="text-[11px] text-neutral-400">Salaar Technologies</span>
-                </div>
-                <h4 class="font-display font-extrabold text-xl text-white group-hover:text-crimson transition-colors">
-                  Horizon PK Website
-                </h4>
-                <ul class="space-y-1.5 text-xs sm:text-sm text-neutral-300 leading-relaxed">
-                  <li class="flex items-start gap-2">
-                    <span class="text-crimson font-bold mt-0.5">•</span>
-                    <span>Designed intuitive UI aligned with brand identity</span>
-                  </li>
-                  <li class="flex items-start gap-2">
-                    <span class="text-crimson font-bold mt-0.5">•</span>
-                    <span>Structured layout to improve readability and user interaction</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="px-6 pb-6 pt-2 flex items-center justify-between border-t border-white/5">
-              <span class="text-xs font-bold uppercase tracking-wider text-white group-hover:text-crimson transition-colors">
-                Inspect Case Study →
-              </span>
-            </div>
-          </article>
-
-          <!-- PROJECT 2: IPE Education Website -->
-          <article
-            data-category="websites"
-            onclick="openProjectModal('ipe')"
-            class="project-card group rounded-3xl bg-charcoal border border-white/10 hover:border-crimson overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between cursor-pointer"
-          >
-            <div>
-              <!-- Bespoke UI Preview Header -->
-              <div class="h-52 bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0D0D0D] p-5 relative overflow-hidden flex flex-col justify-between border-b border-white/10">
-                <div class="flex items-center justify-between text-[10px]">
-                  <span class="px-2.5 py-0.5 rounded-full bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 font-bold uppercase tracking-wider">New Project</span>
-                  <span class="px-2.5 py-0.5 rounded-full bg-white/10 text-neutral-200 font-semibold">Tool: Figma</span>
-                </div>
-                <!-- Mini Academic Portal Frame -->
-                <div class="mx-auto w-full rounded-t-xl bg-white text-obsidian p-3 shadow-xl translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                  <div class="flex items-center justify-between border-b border-neutral-200 pb-1.5 mb-2">
-                    <span class="font-display font-extrabold text-xs text-slate-900">IPE EDUCATION</span>
-                    <span class="px-2 py-0.5 rounded bg-sky-600 text-white text-[8px] font-bold">Admissions</span>
-                  </div>
-                  <div class="grid grid-cols-3 gap-1.5">
-                    <div class="p-1.5 rounded bg-slate-100 text-[8px] font-bold text-slate-800">Programs</div>
-                    <div class="p-1.5 rounded bg-slate-100 text-[8px] font-bold text-slate-800">Faculty</div>
-                    <div class="p-1.5 rounded bg-sky-50 text-[8px] font-bold text-sky-700">Portal</div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card Details -->
-              <div class="p-6 pb-4 space-y-3">
-                <div class="flex items-center justify-between gap-2">
-                  <a
-                    href="https://ipe-education.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onclick="event.stopPropagation()"
-                    class="text-xs font-mono text-crimson hover:underline"
-                  >
-                    ipe-education.com ↗
-                  </a>
-                  <span class="text-[11px] text-neutral-400">Salaar Technologies</span>
-                </div>
-                <h4 class="font-display font-extrabold text-xl text-white group-hover:text-crimson transition-colors">
-                  IPE Education Website
-                </h4>
-                <ul class="space-y-1.5 text-xs sm:text-sm text-neutral-300 leading-relaxed">
-                  <li class="flex items-start gap-2">
-                    <span class="text-crimson font-bold mt-0.5">•</span>
-                    <span>Developed a clean and professional UI for an educational platform</span>
-                  </li>
-                  <li class="flex items-start gap-2">
-                    <span class="text-crimson font-bold mt-0.5">•</span>
-                    <span>Designed responsive layouts for mobile and desktop</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="px-6 pb-6 pt-2 flex items-center justify-between border-t border-white/5">
-              <span class="text-xs font-bold uppercase tracking-wider text-white group-hover:text-crimson transition-colors">
-                Inspect Case Study →
-              </span>
-            </div>
-          </article>
-
-          <!-- PROJECT 3: Electomix Website -->
+        <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7"><!-- PROJECT 3: Electro Mix -->
           <article
             data-category="websites"
             onclick="openProjectModal('electomix')"
@@ -812,10 +679,10 @@
                   >
                     electomix.com ↗
                   </a>
-                  <span class="text-[11px] text-neutral-400">Salaar Technologies</span>
+                  <span class="text-[11px] text-neutral-400">Salar Technology</span>
                 </div>
                 <h4 class="font-display font-extrabold text-xl text-white group-hover:text-crimson transition-colors">
-                  Electomix Website
+                  Electro Mix
                 </h4>
                 <ul class="space-y-1.5 text-xs sm:text-sm text-neutral-300 leading-relaxed">
                   <li class="flex items-start gap-2">
@@ -837,7 +704,7 @@
             </div>
           </article>
 
-          <!-- PROJECT 4: Cloud Future System -->
+          <!-- PROJECT 4: Cloud FS -->
           <article
             data-category="webapp-ecommerce"
             onclick="openProjectModal('cloudfs')"
@@ -850,7 +717,7 @@
                   <span class="px-2.5 py-0.5 rounded-full bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 font-bold uppercase tracking-wider">New Project</span>
                   <span class="px-2.5 py-0.5 rounded-full bg-white/10 text-neutral-200 font-semibold">Tool: Figma</span>
                 </div>
-<img src="assets/images/cloudfs-custom-website.png" alt="Cloud Future Systems custom website preview" loading="lazy" class="absolute inset-0 w-full h-full object-cover object-top">              </div>
+<img src="assets/images/cloudfs-custom-website.png" alt="Cloud FS custom website preview" loading="lazy" class="absolute inset-0 w-full h-full object-cover object-top">              </div>
 
               <!-- Card Details -->
               <div class="p-6 pb-4 space-y-3">
@@ -867,7 +734,7 @@
                   <span class="text-[11px] text-neutral-400">Web Application</span>
                 </div>
                 <h4 class="font-display font-extrabold text-xl text-white group-hover:text-crimson transition-colors">
-                  Cloud Future System
+                  Cloud FS
                 </h4>
                 <ul class="space-y-1.5 text-xs sm:text-sm text-neutral-300 leading-relaxed">
                   <li class="flex items-start gap-2">
@@ -944,7 +811,7 @@
                     <!-- PROJECT 6: GetMeLeads -->
           <article data-category="webapp-ecommerce" class="project-card group rounded-3xl bg-charcoal border border-white/10 hover:border-crimson overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
             <div><div class="h-52 bg-[#042b29] p-5 relative overflow-hidden border-b border-white/10"><img src="assets/images/getmeleads-custom-website.png" alt="GetMeLeads custom website preview" loading="lazy" class="absolute inset-0 w-full h-full object-cover object-top"><div class="relative z-10 flex items-center justify-between text-[10px]"><span class="px-2.5 py-0.5 rounded-full bg-emerald-500 text-white font-bold uppercase tracking-wider">Product UI</span><span class="px-2.5 py-0.5 rounded-full bg-obsidian/80 text-white font-semibold">Web app</span></div></div>
-              <div class="p-6 pb-4 space-y-3"><div class="flex items-center justify-between gap-2"><span class="text-xs font-mono text-crimson">getmeleads.ai</span><span class="text-[11px] text-neutral-400">Programmers Force</span></div><h4 class="font-display font-bold text-xl text-white group-hover:text-crimson transition-colors">Programmers Force</h4><p class="text-sm text-neutral-300 leading-relaxed">Selected product experience projects.</p><div class="flex flex-wrap gap-2" aria-label="Programmers Force projects"><span class="rounded-full bg-white/10 px-3 py-1 text-xs text-neutral-200">GetMeLeads</span><span class="rounded-full bg-white/10 px-3 py-1 text-xs text-neutral-200">AML Watcher</span><span class="rounded-full bg-white/10 px-3 py-1 text-xs text-neutral-200">Green CRM</span></div></div></div>
+              <div class="p-6 pb-4 space-y-3"><div class="flex items-center justify-between gap-2"><span class="text-xs font-mono text-crimson">getmeleads.ai</span><span class="text-[11px] text-neutral-400">Get Me Leads</span></div><h4 class="font-display font-bold text-xl text-white group-hover:text-crimson transition-colors">Get Me Leads</h4><p class="text-sm text-neutral-300 leading-relaxed">Selected product experience projects.</p><div class="flex flex-wrap gap-2" aria-label="Get Me Leads projects"><span class="rounded-full bg-white/10 px-3 py-1 text-xs text-neutral-200">GetMeLeads</span><span class="rounded-full bg-white/10 px-3 py-1 text-xs text-neutral-200">AML Watcher</span><span class="rounded-full bg-white/10 px-3 py-1 text-xs text-neutral-200">Green CRM</span></div></div></div>
             <a href="https://getmeleads.ai/" target="_blank" rel="noopener noreferrer" class="px-6 pb-6 pt-4 flex items-center justify-between border-t border-white/5 text-xs font-bold uppercase tracking-wider text-white hover:text-crimson transition-colors">Visit live project <span aria-hidden="true">&nearr;</span></a>
           </article>
 
@@ -970,11 +837,11 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               <div class="p-4 rounded-2xl bg-obsidian border border-white/10">
                 <span class="text-[11px] font-bold text-crimson uppercase">Campaign 01</span>
-                <h5 class="font-display font-bold text-base text-white mt-1">Social Media Posts for IPE Education</h5>
+                <h5 class="font-display font-bold text-base text-white mt-1">Social Media Posts for Salar Technology</h5>
               </div>
               <div class="p-4 rounded-2xl bg-obsidian border border-white/10">
                 <span class="text-[11px] font-bold text-crimson uppercase">Campaign 02</span>
-                <h5 class="font-display font-bold text-base text-white mt-1">Social Media Posts for Salaar Technologies</h5>
+                <h5 class="font-display font-bold text-base text-white mt-1">Social Media Posts for Salar Technology</h5>
               </div>
               <div class="p-4 rounded-2xl bg-obsidian border border-white/10">
                 <span class="text-[11px] font-bold text-crimson uppercase">Campaign 03</span>
@@ -1015,7 +882,7 @@
       <!-- 4 Graphic Design Campaign Visual Cards -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         
-        <!-- Campaign 1: Social Media Posts for IPE Education -->
+        <!-- Campaign 1: Social Media Posts for Salar Technology -->
         <article class="group rounded-3xl bg-white border border-black/10 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
           <div>
             <div class="h-52 bg-gradient-to-br from-[#171719] via-[#282326] to-[#8b2235] p-5 flex flex-col justify-between relative overflow-hidden">
@@ -1033,7 +900,7 @@
             <div class="p-6 space-y-2">
               <span class="text-[11px] font-condensed font-bold tracking-widest text-crimson uppercase">Education Brand</span>
               <h3 class="font-display font-bold text-lg text-obsidian leading-snug">
-                Social Media Posts for IPE Education
+                Social Media Posts for Salar Technology
               </h3>
               <p class="text-xs text-neutral-600 leading-relaxed">
                 Structured informational carousels, admissions announcements, and student engagement visuals.
@@ -1046,7 +913,7 @@
           </div>
         </article>
 
-        <!-- Campaign 2: Social Media Posts for Salaar Technologies -->
+        <!-- Campaign 2: Social Media Posts for Salar Technology -->
         <article class="group rounded-3xl bg-white border border-black/10 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
           <div>
             <div class="h-52 bg-gradient-to-br from-[#171719] via-[#282326] to-[#8b2235] p-5 flex flex-col justify-between relative overflow-hidden">
@@ -1058,13 +925,13 @@
               <div class="my-auto mx-auto w-36 h-32 rounded-2xl bg-charcoal border border-crimson/50 p-3 shadow-lg flex flex-col justify-between group-hover:scale-105 transition-transform">
                 <span class="text-[9px] font-condensed font-bold uppercase tracking-wider text-crimson">Tech &amp; Digital</span>
                 <p class="font-display font-extrabold text-xs text-white leading-snug">Modern Web &amp; Cloud Solutions</p>
-                <span class="inline-block w-full py-1 rounded bg-crimson text-white text-center text-[8px] font-bold">Salaar Technologies</span>
+                <span class="inline-block w-full py-1 rounded bg-crimson text-white text-center text-[8px] font-bold">Salar Technology</span>
               </div>
             </div>
             <div class="p-6 space-y-2">
               <span class="text-[11px] font-condensed font-bold tracking-widest text-crimson uppercase">Technology Agency</span>
               <h3 class="font-display font-bold text-lg text-obsidian leading-snug">
-                Social Media Posts for Salaar Technologies
+                Social Media Posts for Salar Technology
               </h3>
               <p class="text-xs text-neutral-600 leading-relaxed">
                 High-contrast corporate tech graphics, service highlights, and digital product launch visuals.
@@ -1173,13 +1040,13 @@
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <!-- 1. Phone -->
             <div class="rounded-2xl bg-charcoal border border-white/10 hover:border-crimson p-5 flex items-center justify-between gap-3 transition-all">
-              <a href="tel:03349967611" class="space-y-1 group">
+              <a href="tel:03490477181" class="space-y-1 group">
                 <span class="block text-[11px] font-condensed uppercase tracking-widest text-emerald-400 font-bold">Phone</span>
-                <span class="block font-semibold text-sm sm:text-base text-white group-hover:text-crimson transition-colors">03349967611</span>
+                <span class="block font-semibold text-sm sm:text-base text-white group-hover:text-crimson transition-colors">03490477181</span>
               </a>
               <button
                 type="button"
-                onclick="copyText('03349967611', 'Phone number')"
+                onclick="copyText('03490477181', 'Phone number')"
                 class="p-2.5 rounded-xl bg-white/5 hover:bg-crimson text-neutral-300 hover:text-white transition-colors cursor-pointer"
                 title="Copy Phone Number"
                 aria-label="Copy Phone Number"
@@ -1528,69 +1395,12 @@
     /**
      * 5. Section 06A — Interactive Featured Case Study Spotlight (Tab + Desktop/Mobile Toggle)
      */
-    let activeSpotlightKey = 'horizon';
+    let activeSpotlightKey = 'cloudfs';
     let activeSpotlightViewport = 'desktop';
 
     const SPOTLIGHT_DATA = {
-      horizon: {
-        title: 'Horizon PK Website',
-        domain: 'horizonpk.com',
-        url: 'https://horizonpk.com',
-        badge: 'Full Redesign',
-        challenge:
-          'The existing website needed a cohesive visual overhaul to reflect brand identity while resolving cluttered layouts that hindered readability and user interaction.',
-        solution:
-          'Designed an intuitive UI aligned with brand identity and structured a clean, scannable layout hierarchy to improve readability and user interaction across devices.',
-        deliverables: ['Full Website Redesign', 'Brand-Aligned UI', 'Layout Hierarchy', 'Figma Prototype', 'Responsive Design'],
-        desktopWireframe: `
-          <div class="rounded-xl bg-[#141417] border border-white/15 p-4 space-y-3 text-left">
-            <div class="flex items-center justify-between border-b border-white/10 pb-2.5">
-              <div class="flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-crimson"></span>
-                <span class="font-display font-bold text-xs text-white tracking-wider">HORIZON PK — DESKTOP LAYOUT (1440px)</span>
-              </div>
-              <div class="flex gap-2 text-[10px] text-neutral-400">
-                <span>About</span><span>Services</span><span class="text-crimson font-bold">Contact</span>
-              </div>
-            </div>
-            <div class="grid grid-cols-12 gap-3 items-center py-2">
-              <div class="col-span-7 space-y-2">
-                <span class="inline-block px-2 py-0.5 rounded bg-crimson/20 text-crimson text-[9px] font-bold uppercase">Brand Identity Aligned</span>
-                <h5 class="font-display font-bold text-base text-white leading-tight">Structured Visual Hierarchy &amp; High Readability</h5>
-                <p class="text-[11px] text-neutral-400">Clear typographic rhythm and guided user interaction pathways.</p>
-                <div class="pt-1 flex gap-2">
-                  <span class="px-3 py-1 rounded-lg bg-crimson text-white text-[10px] font-bold">Primary CTA</span>
-                  <span class="px-3 py-1 rounded-lg bg-white/10 text-neutral-200 text-[10px]">Learn More</span>
-                </div>
-              </div>
-              <div class="col-span-5 rounded-xl bg-gradient-to-br from-crimson/25 to-white/5 border border-white/10 p-4 space-y-2">
-                <div class="h-2 w-2/3 rounded bg-white/70"></div>
-                <div class="h-16 rounded-lg bg-black/40 border border-white/10 flex items-center justify-center text-[10px] font-mono text-neutral-300">Hero Visual Grid</div>
-              </div>
-            </div>
-          </div>
-        `,
-        mobileWireframe: `
-          <div class="mx-auto max-w-[230px] rounded-3xl bg-[#141417] border-2 border-white/25 p-3.5 space-y-3 text-left shadow-xl">
-            <div class="w-10 h-1 rounded-full bg-white/20 mx-auto"></div>
-            <div class="flex items-center justify-between text-[10px]">
-              <span class="font-display font-bold text-white">HORIZON PK</span>
-              <span class="text-crimson font-bold">☰</span>
-            </div>
-            <div class="rounded-xl bg-gradient-to-br from-crimson/25 to-white/5 border border-white/10 p-3 space-y-1.5">
-              <span class="text-[8px] uppercase tracking-wider text-crimson font-bold">Mobile 375px</span>
-              <p class="font-display font-bold text-xs text-white leading-snug">Readable Mobile-First Layout</p>
-              <span class="inline-block w-full py-1 rounded bg-crimson text-white text-center text-[9px] font-bold">Get Started</span>
-            </div>
-            <div class="space-y-1.5">
-              <div class="h-6 rounded bg-white/5 px-2 flex items-center text-[9px] text-neutral-300">01. Brand Overview</div>
-              <div class="h-6 rounded bg-white/5 px-2 flex items-center text-[9px] text-neutral-300">02. Core Services</div>
-            </div>
-          </div>
-        `,
-      },
       cloudfs: {
-        title: 'Cloud Future System',
+        title: 'Cloud FS',
         domain: 'cloudfs.net',
         url: 'https://cloudfs.net',
         badge: 'New Project',
@@ -1791,67 +1601,11 @@
      * 7. Rich Case Study Modal Drawer Data & Controls
      */
     const MODAL_PROJECTS = {
-      horizon: {
-        scope: 'Full Redesign • Salaar Technologies',
-        domain: 'horizonpk.com',
-        url: 'https://horizonpk.com',
-        title: 'Horizon PK Website',
-        subtitle:
-          'Complete UI/UX website redesign in Figma aligning visual identity with structured content hierarchy for superior readability and engagement.',
-        challenge:
-          'Outdated page structure and inconsistent visual styling reduced content scannability and user interaction across key corporate landing pages.',
-        solution:
-          'Designed an intuitive UI aligned with brand identity and structured a clean, responsive layout to improve readability and user interaction.',
-        highlights: [
-          'Designed intuitive UI aligned with brand identity',
-          'Structured layout to improve readability and user interaction',
-          'Responsive desktop and mobile grid architecture',
-          'Interactive Figma component library & handoff specs',
-        ],
-        tags: ['Full Redesign', 'Figma', 'Responsive Design', 'Brand Identity'],
-        mockupHtml: `
-          <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div>
-              <span class="text-[11px] font-mono text-crimson uppercase">horizonpk.com • Full Redesign</span>
-              <p class="font-display font-bold text-lg text-white mt-0.5">Brand-Aligned Corporate Interface &amp; Structured Readability</p>
-            </div>
-            <span class="px-3.5 py-1.5 rounded-xl bg-crimson text-white text-xs font-bold shrink-0">Figma Prototype</span>
-          </div>
-        `,
-      },
-      ipe: {
-        scope: 'New Project • Salaar Technologies',
-        domain: 'ipe-education.com',
-        url: 'https://ipe-education.com',
-        title: 'IPE Education Website',
-        subtitle:
-          'Clean, trustworthy academic platform UI designed from the ground up for seamless desktop and mobile student navigation.',
-        challenge:
-          'Students and parents needed quick, structured access to educational programs, institutional credentials, and admission steps on any device.',
-        solution:
-          'Developed a clean and professional UI for an educational platform with dedicated responsive layouts for both mobile and desktop.',
-        highlights: [
-          'Developed a clean and professional UI for an educational platform',
-          'Designed responsive layouts for mobile and desktop',
-          'Clear academic program discovery & navigation hierarchy',
-          'Consistent typography and accessible contrast standards',
-        ],
-        tags: ['New Project', 'Figma', 'EdTech UI', 'Mobile & Desktop'],
-        mockupHtml: `
-          <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div>
-              <span class="text-[11px] font-mono text-emerald-400 uppercase">ipe-education.com • New Project</span>
-              <p class="font-display font-bold text-lg text-white mt-0.5">Clean Educational Platform UI &amp; Responsive Breakpoints</p>
-            </div>
-            <span class="px-3.5 py-1.5 rounded-xl bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 text-xs font-bold shrink-0">Desktop + Mobile</span>
-          </div>
-        `,
-      },
       electomix: {
-        scope: 'New Project • Salaar Technologies',
+        scope: 'New Project • Salar Technology',
         domain: 'electomix.com',
         url: 'https://electomix.com',
-        title: 'Electomix Website',
+        title: 'Electro Mix',
         subtitle:
           'Modern electronics web interface built in Figma to elevate product usability through cleaner layout architecture and interaction design.',
         challenge:
@@ -1876,10 +1630,10 @@
         `,
       },
       cloudfs: {
-        scope: 'New Project • Salaar Technologies',
+        scope: 'New Project • Salar Technology',
         domain: 'cloudfs.net',
         url: 'https://cloudfs.net',
-        title: 'Cloud Future System',
+        title: 'Cloud FS',
         subtitle:
           'Service-oriented cloud web application prototype designed with scalable UI/UX architecture and responsive system workflows.',
         challenge:
@@ -1904,7 +1658,7 @@
         `,
       },
       styleexcel: {
-        scope: 'New Project • Salaar Technologies',
+        scope: 'New Project • Salar Technology',
         domain: 'styleexcel.com',
         url: 'https://styleexcel.com',
         title: 'StyleExcel',
