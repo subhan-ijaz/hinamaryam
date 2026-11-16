@@ -357,7 +357,7 @@
         <article class="group rounded-3xl bg-white p-5 pb-7 border border-black/10 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300">
           <div class="rounded-2xl bg-offwhite border border-black/5 h-56 mb-6 overflow-hidden flex items-center justify-center p-6 relative">
             <span class="absolute z-10 top-3 left-3 text-[10px] font-condensed font-bold tracking-widest uppercase px-2.5 py-1 rounded-full bg-white text-neutral-600">02 / Visual Systems</span>
-            <img src="assets/images/styleexcel.com_.png" alt="StyleExcel storefront design" class="absolute inset-0 w-full h-full object-cover" loading="lazy"><span aria-hidden="true" class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/10"></span>
+            <img src="assets/images/styleexcel-custom-website.png" alt="StyleExcel storefront design" class="absolute inset-0 w-full h-full object-cover" loading="lazy"><span aria-hidden="true" class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/10"></span>
           </div>
           <h3 class="font-condensed font-bold text-2xl tracking-wide text-obsidian uppercase mb-2">
             THINKING OUT LOUD
@@ -445,7 +445,7 @@
       <div class="max-w-3xl reveal">
         <div class="flex items-center gap-3 mb-4">
           <span class="px-3 py-1 rounded-full bg-crimson text-white font-condensed font-bold text-xs tracking-widest">06</span>
-          <span class="font-condensed font-bold text-sm tracking-[0.2em] uppercase text-crimson">Salar Technology • Figma Portfolio</span>
+          <span class="font-condensed font-bold text-sm tracking-[0.2em] uppercase text-crimson">Professional Experience</span>
         </div>
         <h2 class="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-white uppercase mb-4">
           EXPERIENCE DESIGN
@@ -458,7 +458,33 @@
       <!-- =================================================================
            PART A: INTERACTIVE FEATURED CASE STUDY SPOTLIGHT
       ================================================================== -->
-      <div class="rounded-3xl bg-charcoal border border-white/15 p-6 sm:p-10 shadow-2xl space-y-8 reveal">
+      <div class="space-y-4 reveal">
+        <div class="flex flex-wrap gap-2" role="tablist" aria-label="Professional experience">
+          <button
+            type="button"
+            id="experience-tab-salar"
+            role="tab"
+            aria-selected="true"
+            aria-controls="salar-experience-panel"
+            onclick="selectExperience('salar')"
+            class="experience-tab px-4 py-2 rounded-xl bg-crimson text-white text-xs font-bold tracking-wide transition-all cursor-pointer"
+          >
+            Salar Technology
+          </button>
+          <button
+            type="button"
+            id="experience-tab-programmer-force"
+            role="tab"
+            aria-selected="false"
+            aria-controls="programmer-force-experience-panel"
+            onclick="selectExperience('programmer-force')"
+            class="experience-tab px-4 py-2 rounded-xl bg-charcoal text-neutral-300 hover:text-white border border-white/15 text-xs font-bold tracking-wide transition-all cursor-pointer"
+          >
+            Programmer Force
+          </button>
+        </div>
+
+        <div id="salar-experience-panel" class="experience-panel rounded-3xl bg-charcoal border border-white/15 p-6 sm:p-10 shadow-2xl space-y-8" role="tabpanel" aria-labelledby="experience-tab-salar">
         <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-white/10 pb-6">
           <div>
             <span class="text-[11px] font-condensed font-bold tracking-[0.2em] uppercase text-crimson">Featured Case Study Spotlight</span>
@@ -499,7 +525,7 @@
         <!-- Spotlight Content Grid -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
           
-          <!-- Left: Interactive Desktop / Mobile Responsive Wireframe Preview Stage -->
+          <!-- Left: Website Screenshot Preview -->
           <div class="lg:col-span-7 space-y-4">
             <div class="flex items-center justify-between bg-obsidian border border-white/10 rounded-2xl px-4 py-2.5">
               <div class="flex items-center gap-2">
@@ -515,30 +541,11 @@
                 </a>
               </div>
 
-              <!-- Desktop / Mobile Responsive Toggle -->
-              <div class="inline-flex p-1 rounded-xl bg-charcoal border border-white/10">
-                <button
-                  type="button"
-                  id="viewport-btn-desktop"
-                  onclick="setSpotlightViewport('desktop')"
-                  class="px-3 py-1 rounded-lg bg-crimson text-white text-[11px] font-bold uppercase tracking-wider transition-all cursor-pointer"
-                >
-                  Desktop
-                </button>
-                <button
-                  type="button"
-                  id="viewport-btn-mobile"
-                  onclick="setSpotlightViewport('mobile')"
-                  class="px-3 py-1 rounded-lg text-neutral-400 hover:text-white text-[11px] font-bold uppercase tracking-wider transition-all cursor-pointer"
-                >
-                  Mobile
-                </button>
-              </div>
             </div>
 
-            <!-- Interactive Wireframe Stage Container -->
+            <!-- Website Screenshot Stage -->
             <div class="rounded-2xl bg-[#0A0A0C] border border-white/10 p-5 sm:p-7 min-h-[310px] flex items-center justify-center relative overflow-hidden">
-              <div id="spotlight-wireframe-stage" class="w-full transition-all duration-300">
+              <div id="spotlight-preview-stage" class="w-full transition-all duration-300">
                 <!-- Populated by JS -->
               </div>
             </div>
@@ -583,6 +590,59 @@
                 <!-- Populated by JS -->
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="rounded-3xl bg-charcoal border border-white/15 p-6 sm:p-8">
+          <div class="grid grid-cols-1 lg:grid-cols-5 gap-6 items-center">
+            <img src="assets/images/horizonpk-preview.png" alt="Horizon PK website screenshot" loading="lazy" class="lg:col-span-2 w-full h-56 rounded-2xl object-cover object-top">
+            <div class="lg:col-span-3 space-y-3">
+              <span class="text-[11px] font-condensed font-bold tracking-[0.2em] uppercase text-crimson">Website Reference</span>
+              <h3 class="font-display font-bold text-2xl text-white">Horizon PK</h3>
+              <p class="text-sm text-neutral-300 leading-relaxed">Reference to the Horizon PK website. Website design is not presented as my work.</p>
+              <a href="https://horizonpk.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-white hover:text-crimson transition-colors">Visit horizonpk.com <span aria-hidden="true">&nearr;</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div id="programmer-force-experience-panel" class="experience-panel hidden rounded-3xl bg-charcoal border border-white/15 p-6 sm:p-10 shadow-2xl space-y-7" role="tabpanel" aria-labelledby="experience-tab-programmer-force">
+          <div class="border-b border-white/10 pb-5">
+            <span class="text-[11px] font-condensed font-bold tracking-[0.2em] uppercase text-crimson">Programmer Force Experience</span>
+            <h3 class="font-display font-bold text-2xl sm:text-3xl text-white mt-1">Project References</h3>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <article class="rounded-2xl bg-obsidian border border-white/10 overflow-hidden flex flex-col">
+              <img src="assets/images/getmeleads-custom-website.png" alt="GetMeLeads website screenshot showing the page header and product dashboard" loading="lazy" class="h-44 w-full object-cover object-top">
+              <div class="p-6 flex flex-col flex-1">
+                <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-300">Live Project</span>
+                <h4 class="font-display font-bold text-xl text-white mt-2">GetMeLeads</h4>
+                <p class="text-sm text-neutral-300 leading-relaxed mt-3 flex-1">Programmer Force project.</p>
+                <a href="https://getmeleads.ai/" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-white hover:text-crimson transition-colors">Visit GetMeLeads <span aria-hidden="true">&nearr;</span></a>
+              </div>
+            </article>
+            <article class="rounded-2xl bg-obsidian border border-white/10 overflow-hidden flex flex-col">
+              <div class="relative">
+                <img src="assets/images/aml-watcher-concept.svg" alt="Illustrative AML compliance monitoring dashboard concept" loading="lazy" class="h-44 w-full object-cover">
+                <span class="absolute top-3 left-3 rounded-full bg-obsidian/85 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-amber-200">Concept illustration</span>
+              </div>
+              <div class="p-6">
+                <span class="text-[11px] font-bold uppercase tracking-wider text-neutral-400">Project reference</span>
+                <h4 class="font-display font-bold text-xl text-white mt-2">AML Watcher</h4>
+                <p class="text-sm text-neutral-300 leading-relaxed mt-3">An AI-powered Anti-Money Laundering (AML) compliance platform that helps financial institutions identify potential risks through sanctions screening, PEP checks, adverse media monitoring, and ongoing risk assessment.</p>
+              </div>
+            </article>
+            <article class="rounded-2xl bg-obsidian border border-white/10 overflow-hidden flex flex-col">
+              <div class="relative">
+                <img src="assets/images/greencrm-concept.svg" alt="Illustrative GreenCRM customer and sales dashboard concept" loading="lazy" class="h-44 w-full object-cover">
+                <span class="absolute top-3 left-3 rounded-full bg-obsidian/85 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-emerald-200">Concept illustration</span>
+              </div>
+              <div class="p-6">
+                <span class="text-[11px] font-bold uppercase tracking-wider text-neutral-400">Project reference</span>
+                <h4 class="font-display font-bold text-xl text-white mt-2">GreenCRM</h4>
+                <p class="text-sm text-neutral-300 leading-relaxed mt-3">A Customer Relationship Management (CRM) platform designed to streamline customer interactions, manage sales pipelines, automate business processes, and improve team productivity through AI-powered tools.</p>
+              </div>
+            </article>
           </div>
         </div>
       </div>
@@ -644,27 +704,11 @@
             <div>
               <!-- Bespoke UI Preview Header -->
               <div class="h-52 bg-gradient-to-br from-[#18181B] via-[#27272A] to-[#09090B] p-5 relative overflow-hidden flex flex-col justify-between border-b border-white/10">
-                <div class="flex items-center justify-between text-[10px]">
+                <div class="relative z-10 flex items-center justify-between text-[10px]">
                   <span class="px-2.5 py-0.5 rounded-full bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 font-bold uppercase tracking-wider">New Project</span>
                   <span class="px-2.5 py-0.5 rounded-full bg-white/10 text-neutral-200 font-semibold">Tool: Figma</span>
                 </div>
-                <!-- Mini Electronics Showcase Frame -->
-                <div class="mx-auto w-full rounded-t-xl bg-[#111113] border-t border-x border-amber-400/30 p-3 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                  <div class="flex items-center justify-between mb-2">
-                    <span class="font-display font-extrabold text-xs text-amber-400">ELECTOMIX</span>
-                    <span class="text-[9px] text-neutral-400">Smart Hardware</span>
-                  </div>
-                  <div class="grid grid-cols-2 gap-2">
-                    <div class="p-2 rounded-lg bg-white/5 border border-white/10">
-                      <span class="block text-[9px] font-bold text-white">Pro Series</span>
-                      <span class="block text-[8px] text-amber-400">Interactive Spec</span>
-                    </div>
-                    <div class="p-2 rounded-lg bg-white/5 border border-white/10">
-                      <span class="block text-[9px] font-bold text-white">Catalog UI</span>
-                      <span class="block text-[8px] text-neutral-400">Quick Filter</span>
-                    </div>
-                  </div>
-                </div>
+                <img src="assets/images/electomix.com_.png" alt="Electomix website screenshot" loading="lazy" class="absolute inset-0 w-full h-full object-cover object-top">
               </div>
 
               <!-- Card Details -->
@@ -811,8 +855,24 @@
                     <!-- PROJECT 6: GetMeLeads -->
           <article data-category="webapp-ecommerce" class="project-card group rounded-3xl bg-charcoal border border-white/10 hover:border-crimson overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
             <div><div class="h-52 bg-[#042b29] p-5 relative overflow-hidden border-b border-white/10"><img src="assets/images/getmeleads-custom-website.png" alt="GetMeLeads custom website preview" loading="lazy" class="absolute inset-0 w-full h-full object-cover object-top"><div class="relative z-10 flex items-center justify-between text-[10px]"><span class="px-2.5 py-0.5 rounded-full bg-emerald-500 text-white font-bold uppercase tracking-wider">Product UI</span><span class="px-2.5 py-0.5 rounded-full bg-obsidian/80 text-white font-semibold">Web app</span></div></div>
-              <div class="p-6 pb-4 space-y-3"><div class="flex items-center justify-between gap-2"><span class="text-xs font-mono text-crimson">getmeleads.ai</span><span class="text-[11px] text-neutral-400">Get Me Leads</span></div><h4 class="font-display font-bold text-xl text-white group-hover:text-crimson transition-colors">Get Me Leads</h4><p class="text-sm text-neutral-300 leading-relaxed">Selected product experience projects.</p><div class="flex flex-wrap gap-2" aria-label="Get Me Leads projects"><span class="rounded-full bg-white/10 px-3 py-1 text-xs text-neutral-200">GetMeLeads</span><span class="rounded-full bg-white/10 px-3 py-1 text-xs text-neutral-200">AML Watcher</span><span class="rounded-full bg-white/10 px-3 py-1 text-xs text-neutral-200">Green CRM</span></div></div></div>
+              <div class="p-6 pb-4 space-y-3"><div class="flex items-center justify-between gap-2"><span class="text-xs font-mono text-crimson">getmeleads.ai</span><span class="text-[11px] text-neutral-400">Get Me Leads</span></div><h4 class="font-display font-bold text-xl text-white group-hover:text-crimson transition-colors">Get Me Leads</h4><p class="text-sm text-neutral-300 leading-relaxed">Selected product experience projects.</p><div class="flex flex-wrap gap-2" aria-label="Get Me Leads projects"><span class="rounded-full bg-white/10 px-3 py-1 text-xs text-neutral-200">GetMeLeads</span><span class="rounded-full bg-white/10 px-3 py-1 text-xs text-neutral-200">AML Watcher</span><span class="rounded-full bg-white/10 px-3 py-1 text-xs text-neutral-200">GreenCRM</span></div></div></div>
             <a href="https://getmeleads.ai/" target="_blank" rel="noopener noreferrer" class="px-6 pb-6 pt-4 flex items-center justify-between border-t border-white/5 text-xs font-bold uppercase tracking-wider text-white hover:text-crimson transition-colors">Visit live project <span aria-hidden="true">&nearr;</span></a>
+          </article>
+
+          <!-- Horizon PK website reference -->
+          <article data-category="websites" class="project-card group rounded-3xl bg-charcoal border border-white/10 hover:border-crimson overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+            <div>
+              <div class="h-52 bg-[#10233A] relative overflow-hidden border-b border-white/10">
+                <img src="assets/images/horizonpk-preview.png" alt="Horizon PK website screenshot" loading="lazy" class="absolute inset-0 w-full h-full object-cover object-top">
+                <span class="absolute top-4 left-4 z-10 px-2.5 py-0.5 rounded-full bg-obsidian/80 text-white text-[10px] font-bold uppercase tracking-wider">Website Reference</span>
+              </div>
+              <div class="p-6 pb-4 space-y-3">
+                <span class="text-xs font-mono text-crimson">horizonpk.com</span>
+                <h4 class="font-display font-bold text-xl text-white">Horizon PK</h4>
+                <p class="text-sm text-neutral-300 leading-relaxed">Website reference only; the site design is not presented as my work.</p>
+              </div>
+            </div>
+            <a href="https://horizonpk.com/" target="_blank" rel="noopener noreferrer" class="px-6 pb-6 pt-4 flex items-center justify-between border-t border-white/5 text-xs font-bold uppercase tracking-wider text-white hover:text-crimson transition-colors">Visit reference <span aria-hidden="true">&nearr;</span></a>
           </article>
 
 <!-- GRAPHIC DESIGN SUMMARY CARD (Shown when Graphic Design filter is selected) -->
@@ -887,7 +947,7 @@
           <div>
             <div class="h-52 bg-gradient-to-br from-[#171719] via-[#282326] to-[#8b2235] p-5 flex flex-col justify-between relative overflow-hidden">
               <div class="flex items-center justify-between text-[10px] text-neutral-200 font-semibold">
-                <span>IPE EDUCATION</span>
+                <span>SALAAR TECHNOLOGY</span>
                 <span class="px-2 py-0.5 rounded bg-crimson text-white">Ps / Canva</span>
               </div>
               <!-- Editorial Social Post Graphic Artwork -->
@@ -1038,18 +1098,18 @@
 
           <!-- One-Click Copy Contact Cards (All 5 Exact Details from Hina's CV) -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <!-- 1. Phone -->
+            <!-- 1. Address -->
             <div class="rounded-2xl bg-charcoal border border-white/10 hover:border-crimson p-5 flex items-center justify-between gap-3 transition-all">
-              <a href="tel:03490477181" class="space-y-1 group">
-                <span class="block text-[11px] font-condensed uppercase tracking-widest text-emerald-400 font-bold">Phone</span>
-                <span class="block font-semibold text-sm sm:text-base text-white group-hover:text-crimson transition-colors">03490477181</span>
-              </a>
+              <div class="space-y-1">
+                <span class="block text-[11px] font-condensed uppercase tracking-widest text-emerald-400 font-bold">Address</span>
+                <span class="block font-semibold text-sm sm:text-base text-white">Lahore, Pakistan</span>
+              </div>
               <button
                 type="button"
-                onclick="copyText('03490477181', 'Phone number')"
+                onclick="copyText('Lahore, Pakistan', 'Address')"
                 class="p-2.5 rounded-xl bg-white/5 hover:bg-crimson text-neutral-300 hover:text-white transition-colors cursor-pointer"
-                title="Copy Phone Number"
-                aria-label="Copy Phone Number"
+                title="Copy Address"
+                aria-label="Copy Address"
               >
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
@@ -1393,10 +1453,24 @@
     }
 
     /**
-     * 5. Section 06A — Interactive Featured Case Study Spotlight (Tab + Desktop/Mobile Toggle)
+     * 5. Section 06A — Interactive Featured Case Study Spotlight
      */
     let activeSpotlightKey = 'cloudfs';
-    let activeSpotlightViewport = 'desktop';
+
+    function selectExperience(key) {
+      document.querySelectorAll('.experience-tab').forEach((tab) => {
+        const isActive = tab.id === `experience-tab-${key}`;
+        tab.setAttribute('aria-selected', String(isActive));
+        tab.className = isActive
+          ? 'experience-tab px-4 py-2 rounded-xl bg-crimson text-white text-xs font-bold tracking-wide transition-all cursor-pointer'
+          : 'experience-tab px-4 py-2 rounded-xl bg-charcoal text-neutral-300 hover:text-white border border-white/15 text-xs font-bold tracking-wide transition-all cursor-pointer';
+      });
+
+      document.querySelectorAll('.experience-panel').forEach((panel) => {
+        panel.classList.add('hidden');
+      });
+      document.getElementById(`${key}-experience-panel`).classList.remove('hidden');
+    }
 
     const SPOTLIGHT_DATA = {
       cloudfs: {
@@ -1409,48 +1483,21 @@
         solution:
           'Designed a service-oriented web application prototype focusing on modern UI/UX principles, scalable architecture, and responsive cloud service workflows.',
         deliverables: ['Service Web App Prototype', 'Scalable System Layouts', 'Cloud Workflows', 'Figma Wireframes', 'Responsive UI'],
-        desktopWireframe: `
-          <div class="rounded-xl bg-[#0D1522] border border-sky-400/25 p-4 space-y-3 text-left">
-            <div class="flex items-center justify-between border-b border-white/10 pb-2.5">
-              <span class="font-display font-bold text-xs text-sky-300 tracking-wider">CLOUD FUTURE SYSTEM — SERVICE CONSOLE</span>
-              <span class="px-2 py-0.5 rounded bg-sky-500/20 text-sky-300 text-[9px] font-mono">Scalable Architecture</span>
-            </div>
-            <div class="grid grid-cols-3 gap-2.5">
-              <div class="p-3 rounded-xl bg-white/5 border border-white/10 space-y-1">
-                <span class="text-[9px] text-sky-300 font-bold uppercase">Compute</span>
-                <p class="text-[11px] font-bold text-white">Cloud Instances</p>
-                <span class="block text-[9px] text-neutral-400">Auto-scaling workflow</span>
-              </div>
-              <div class="p-3 rounded-xl bg-white/5 border border-white/10 space-y-1">
-                <span class="text-[9px] text-emerald-300 font-bold uppercase">Storage</span>
-                <p class="text-[11px] font-bold text-white">Distributed Buckets</p>
-                <span class="block text-[9px] text-neutral-400">Zero-downtime sync</span>
-              </div>
-              <div class="p-3 rounded-xl bg-sky-500/15 border border-sky-400/30 space-y-1">
-                <span class="text-[9px] text-white font-bold uppercase">Status</span>
-                <p class="text-[11px] font-bold text-sky-300">All Systems Active</p>
-                <span class="block text-[9px] text-neutral-300">99.99% Uptime</span>
-              </div>
-            </div>
-          </div>
-        `,
-        mobileWireframe: `
-          <div class="mx-auto max-w-[230px] rounded-3xl bg-[#0D1522] border-2 border-sky-400/35 p-3.5 space-y-3 text-left shadow-xl">
-            <div class="w-10 h-1 rounded-full bg-white/20 mx-auto"></div>
-            <div class="flex items-center justify-between text-[10px]">
-              <span class="font-display font-bold text-sky-300">CLOUDFS</span>
-              <span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 text-[8px]">Live</span>
-            </div>
-            <div class="p-2.5 rounded-xl bg-white/5 border border-white/10 space-y-1">
-              <span class="text-[8px] text-sky-300 uppercase font-bold">Mobile Service View</span>
-              <p class="text-xs font-bold text-white">Cloud Workflow Monitor</p>
-            </div>
-            <div class="space-y-1.5">
-              <div class="h-6 rounded bg-white/5 px-2 flex items-center justify-between text-[9px] text-neutral-200"><span>API Gateway</span><span class="text-emerald-400">●</span></div>
-              <div class="h-6 rounded bg-sky-500 text-obsidian font-bold px-2 flex items-center justify-center text-[9px]">Launch Console</div>
-            </div>
-          </div>
-        `,
+        previewImage: 'assets/images/cloudfs-custom-website.png',
+        previewAlt: 'Cloud FS website screenshot',
+      },
+      electomix: {
+        title: 'Electro Mix',
+        domain: 'electomix.com',
+        url: 'https://electomix.com',
+        badge: 'New Project',
+        challenge:
+          'Technical product specifications and hardware categories required clear visual organization so visitors could browse effortlessly without overwhelm.',
+        solution:
+          'Improved usability through better layout and interaction design, delivering a visually appealing and functional interface.',
+        deliverables: ['Electronics Web UI', 'Product Catalog Layout', 'Product Categories', 'Responsive Components', 'Figma Prototype'],
+        previewImage: 'assets/images/electomix.com_.png',
+        previewAlt: 'Electomix website screenshot',
       },
       styleexcel: {
         title: 'StyleExcel E-Commerce',
@@ -1462,48 +1509,8 @@
         solution:
           'Developed a modern e-commerce website with a user-friendly responsive design, visually attractive product layouts, and smooth navigation interfaces.',
         deliverables: ['E-Commerce Storefront UI', 'Product Card Layouts', 'Smooth Navigation Flow', 'Responsive Breakpoints', 'Figma Prototype'],
-        desktopWireframe: `
-          <div class="rounded-xl bg-[#FAF8F5] text-obsidian border border-white/20 p-4 space-y-3 text-left">
-            <div class="flex items-center justify-between border-b border-neutral-200 pb-2">
-              <span class="font-serif italic font-bold text-sm text-obsidian">StyleExcel Storefront</span>
-              <div class="flex items-center gap-2 text-[10px] font-semibold text-neutral-600">
-                <span>New Arrivals</span><span>Collections</span><span class="px-2 py-0.5 rounded-full bg-crimson text-white">Cart (2)</span>
-              </div>
-            </div>
-            <div class="grid grid-cols-3 gap-2.5">
-              <div class="rounded-xl bg-white border border-neutral-200 p-2.5 space-y-1">
-                <div class="h-12 rounded-lg bg-neutral-100 flex items-center justify-center text-[9px] font-bold text-neutral-500">Product 01</div>
-                <span class="block text-[10px] font-bold text-obsidian">Signature Edit</span>
-                <span class="block text-[9px] text-crimson font-bold">Quick Add +</span>
-              </div>
-              <div class="rounded-xl bg-white border border-neutral-200 p-2.5 space-y-1">
-                <div class="h-12 rounded-lg bg-neutral-100 flex items-center justify-center text-[9px] font-bold text-neutral-500">Product 02</div>
-                <span class="block text-[10px] font-bold text-obsidian">Essential Line</span>
-                <span class="block text-[9px] text-crimson font-bold">Quick Add +</span>
-              </div>
-              <div class="rounded-xl bg-obsidian text-white p-2.5 flex flex-col justify-between">
-                <span class="text-[9px] text-crimson font-bold uppercase">Smooth UX</span>
-                <p class="text-[10px] font-bold leading-snug">2-Step Responsive Checkout</p>
-              </div>
-            </div>
-          </div>
-        `,
-        mobileWireframe: `
-          <div class="mx-auto max-w-[230px] rounded-3xl bg-[#FAF8F5] text-obsidian border-2 border-white/40 p-3.5 space-y-2.5 text-left shadow-xl">
-            <div class="w-10 h-1 rounded-full bg-neutral-300 mx-auto"></div>
-            <div class="flex items-center justify-between">
-              <span class="font-serif italic font-bold text-xs">StyleExcel</span>
-              <span class="px-2 py-0.5 rounded-full bg-crimson text-white text-[8px] font-bold">Bag (2)</span>
-            </div>
-            <div class="rounded-xl bg-white border border-neutral-200 p-2.5 space-y-1">
-              <div class="h-14 rounded-lg bg-neutral-100 flex items-center justify-center text-[9px] font-semibold text-neutral-500">Featured Look</div>
-              <span class="block text-[10px] font-bold">Modern Capsule</span>
-            </div>
-            <div class="py-1.5 rounded-lg bg-obsidian text-white text-center text-[9px] font-bold">
-              Proceed to Checkout →
-            </div>
-          </div>
-        `,
+        previewImage: 'assets/images/styleexcel-custom-website.png',
+        previewAlt: 'StyleExcel e-commerce website screenshot',
       },
     };
 
@@ -1528,9 +1535,8 @@
         )
         .join('');
 
-      const stageEl = document.getElementById('spotlight-wireframe-stage');
-      stageEl.innerHTML =
-        activeSpotlightViewport === 'desktop' ? item.desktopWireframe : item.mobileWireframe;
+      const stageEl = document.getElementById('spotlight-preview-stage');
+      stageEl.innerHTML = `<img src="${item.previewImage}" alt="${item.previewAlt}" class="w-full max-h-[560px] rounded-xl object-contain object-top">`;
     }
 
     function selectSpotlight(key) {
@@ -1543,25 +1549,6 @@
       if (activeTab) {
         activeTab.className =
           'spotlight-tab px-4 py-2 rounded-xl bg-crimson text-white text-xs font-bold tracking-wide transition-all cursor-pointer';
-      }
-      renderSpotlight();
-    }
-
-    function setSpotlightViewport(viewport) {
-      activeSpotlightViewport = viewport;
-      const desktopBtn = document.getElementById('viewport-btn-desktop');
-      const mobileBtn = document.getElementById('viewport-btn-mobile');
-
-      if (viewport === 'desktop') {
-        desktopBtn.className =
-          'px-3 py-1 rounded-lg bg-crimson text-white text-[11px] font-bold uppercase tracking-wider transition-all cursor-pointer';
-        mobileBtn.className =
-          'px-3 py-1 rounded-lg text-neutral-400 hover:text-white text-[11px] font-bold uppercase tracking-wider transition-all cursor-pointer';
-      } else {
-        mobileBtn.className =
-          'px-3 py-1 rounded-lg bg-crimson text-white text-[11px] font-bold uppercase tracking-wider transition-all cursor-pointer';
-        desktopBtn.className =
-          'px-3 py-1 rounded-lg text-neutral-400 hover:text-white text-[11px] font-bold uppercase tracking-wider transition-all cursor-pointer';
       }
       renderSpotlight();
     }
